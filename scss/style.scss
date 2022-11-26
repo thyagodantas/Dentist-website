@@ -1,0 +1,270 @@
+/* Font import*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/**/
+
+/* Reset and config of page */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.clear {
+  clear: both;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+html,
+body {
+  height: 100%;
+}
+/* End reset and config of page*/
+
+/* Start header */
+header {
+  padding: 20px 2%;
+
+  & .logo img {
+    float: left;
+    width: 236px;
+  }
+
+  & nav.menu-desktop {
+    float: right;
+  }
+
+  & nav.menu-desktop ul {
+    padding: 8px 0;
+    list-style-type: none;
+  }
+
+  & nav.menu-desktop ul li {
+    float: left;
+    padding: 0 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  & nav.menu-desktop ul li a {
+    color: #b4b4b4;
+    text-decoration: none;
+  }
+
+  & nav.menu-mobile {
+    display: none;
+    float: right;
+  }
+}
+/* End header */
+
+/* Mosaic section */
+.mosaic-single {
+  float: left;
+  width: calc(100% / 6);
+
+  & .img-mosaic-single {
+    width: 100%;
+    padding-top: 100%;
+    background-color: #ccc;
+    border: 5px solid white;
+    /* background-image: url(); */
+  }
+}
+/**/
+
+/* Services section */
+section.services {
+  & .container {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -30px;
+    text-align: center;
+  }
+
+  & .container .box-services {
+    background-image: url(../images/icone_dente.png);
+    background-size: 18px 18px;
+    background-position: center calc(100% - 5px);
+    background-repeat: no-repeat;
+  }
+
+  & .container .box-services h2 {
+    color: white;
+    font-weight: normal;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+
+  & .container .box-services p {
+    color: white;
+    margin-top: 8px;
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  & .container .box-services:nth-of-type(1) {
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #576975;
+  }
+
+  & .container .box-services:nth-of-type(2) {
+    width: 40%;
+    padding: 45px 2%;
+    background-color: #688293;
+    background-image: none;
+  }
+
+  & .container .box-services:nth-of-type(3) {
+    width: 30%;
+    padding: 30px 2%;
+    background-color: #576975;
+  }
+}
+/* End services section*/
+
+/* Start perfil section*/
+section.perfil-container {
+  padding: 40px 0;
+
+  & .container {
+    max-width: 800px;
+  }
+
+  & .perfil-wraper {
+    padding-top: 60%;
+    position: relative;
+  }
+
+  & .perfil-wraper2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  & .img-perfil {
+    width: 40%;
+    height: 100%;
+    background-image: url(../images/img_perfil.png);
+    background-size: 100% 100%;
+  }
+
+  & .text-perfil {
+    width: 60%;
+    padding: 0 30px;
+
+    & h2 {
+      color: #698293;
+      font-size: 18px;
+    }
+
+    & p {
+      color: #4b4b4b;
+      font-size: 14px;
+      margin-top: 8px;
+    }
+  }
+}
+/* End perfil section*/
+
+/* Media querys */
+@media screen and (max-width: 768px) {
+  header {
+    & nav.menu-desktop {
+      display: none;
+    }
+
+    & nav.menu-mobile {
+      display: block;
+    }
+  }
+
+  section.services {
+    & .container {
+      flex-direction: column;
+    }
+
+    & .container .box-services:nth-of-type(1) {
+      width: 90%;
+      max-width: 350px;
+      padding: 30px 2%;
+    }
+
+    & .container .box-services:nth-of-type(2) {
+      width: 94%;
+      padding: 40px 2%;
+      max-width: 380px;
+      background-image: none;
+    }
+
+    & .container .box-services:nth-of-type(3) {
+      width: 90%;
+      max-width: 350px;
+      padding: 30px 2%;
+    }
+  }
+
+  section.perfil-container {
+    & .perfil-wraper2 {
+      display: inline-block;
+      text-align: center;
+    }
+
+    & .img-perfil {
+      width: 50%;
+      height: auto;
+      padding-top: 70%;
+      display: inline-block;
+    }
+
+    & .text-perfil {
+      width: 100%;
+      padding: 0 30px;
+      display: inline-block;
+      text-align: justify;
+
+      & h2 {
+        color: #698293;
+        font-size: 18px;
+      }
+
+      & p {
+        color: #4b4b4b;
+        font-size: 14px;
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  section.perfil-container {
+    & .img-perfil {
+      width: 80%;
+      height: auto;
+      padding-top: 110%;
+      display: inline-block;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    & .logo img {
+      width: 200px;
+    }
+  }
+}
+/* End Media querys*/
