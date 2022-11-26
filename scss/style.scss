@@ -51,7 +51,7 @@ header {
     text-transform: uppercase;
   }
 
-  & nav.menu-desktop ul li a {
+  & nav ul li a {
     color: #b4b4b4;
     text-decoration: none;
   }
@@ -59,6 +59,28 @@ header {
   & nav.menu-mobile {
     display: none;
     float: right;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    background-image: url(../images/menu-mobile.png);
+    background-size: 100% 100%;
+    margin-top: 6px;
+  }
+
+  & nav.menu-mobile ul {
+    display: none;
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    background-color: white;
+  }
+
+  & nav.menu-mobile ul li {
+    padding: 10px 0;
+    text-transform: uppercase;
   }
 }
 /* End header */
@@ -179,6 +201,21 @@ section.perfil-container {
 }
 /* End perfil section*/
 
+/* Start video section*/
+
+section.videos {
+  padding: 50px 0;
+
+  & .box-video {
+    float: left;
+    width: 33.3%;
+    background-color: green;
+    padding-top: calc(33.3% * 0.6);
+  }
+}
+
+/* End video section */
+
 /* Media querys */
 @media screen and (max-width: 768px) {
   header {
@@ -218,8 +255,14 @@ section.perfil-container {
 
   section.perfil-container {
     & .perfil-wraper2 {
+      height: auto;
+      position: static;
       display: inline-block;
       text-align: center;
+    }
+
+    & .perfil-wraper {
+      padding-top: 0;
     }
 
     & .img-perfil {
