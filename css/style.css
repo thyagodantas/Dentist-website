@@ -31,13 +31,14 @@ header {
 }
 header .logo img {
   float: left;
-  width: 236px;
+  width: 160px;
+  height: 80px;
 }
 header nav.menu-desktop {
   float: right;
 }
 header nav.menu-desktop ul {
-  padding: 8px 0;
+  padding: 35px 0;
   list-style-type: none;
 }
 header nav.menu-desktop ul li {
@@ -58,7 +59,7 @@ header nav.menu-mobile {
   cursor: pointer;
   background-image: url(../images/menu-mobile.png);
   background-size: 100% 100%;
-  margin-top: 6px;
+  margin-top: 28px;
 }
 header nav.menu-mobile ul {
   display: none;
@@ -306,6 +307,86 @@ section.depositions .name-depositions span {
 }
 
 /* End social section*/
+/* Start contact section */
+section.contactForm {
+  padding: 60px 2%;
+}
+section.contactForm h2 {
+  color: #688293;
+  text-align: center;
+  font-size: 18px;
+}
+section.contactForm form {
+  width: 100%;
+  margin: 30px auto;
+  max-width: 500px;
+}
+section.contactForm .w100 {
+  width: 100%;
+}
+section.contactForm .w50 {
+  width: 50%;
+}
+section.contactForm .form-wraper {
+  float: left;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+section.contactForm .form-wraper span {
+  font-size: 15px;
+  color: #b4b4b4;
+}
+section.contactForm .form-wraper input[type=text] {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 9px;
+  border: 1px solid #dadada;
+  margin-top: 8px;
+}
+section.contactForm .form-wraper textarea {
+  width: 100%;
+  height: 121px;
+  margin-top: 8px;
+  padding: 15px;
+  resize: none;
+  border: 1px solid #dadada;
+}
+section.contactForm .form-wraper input[type=submit] {
+  display: inline-block;
+  width: 100px;
+  height: 35px;
+  border: 0;
+  background: #688293;
+  color: white;
+  cursor: pointer;
+}
+
+/* End contact section */
+/* Start footer section */
+footer {
+  padding: 40px 2%;
+  background-color: #688293;
+}
+footer .container {
+  max-width: 1100px;
+}
+footer .footer-block {
+  float: left;
+  width: 33.3%;
+}
+footer .footer-block h2 {
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+}
+footer .footer-block p {
+  color: white;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* End footer section */
 /* Media querys */
 @media screen and (max-width: 1024px) {
   .img-mosaic-single-social {
@@ -391,6 +472,14 @@ section.depositions .name-depositions span {
   .social-mosaic div:nth-of-type(1n + 4) {
     display: none;
   }
+  footer {
+    text-align: center;
+  }
+  footer .footer-block {
+    float: none;
+    width: 100%;
+    margin: 30px 0;
+  }
 }
 @media screen and (max-width: 580px) {
   section.perfil-container .img-perfil {
@@ -403,10 +492,13 @@ section.depositions .name-depositions span {
     width: 100%;
     padding-top: 60%;
   }
+  section.contactForm .w50 {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 480px) {
   header .logo img {
-    width: 200px;
+    width: 150px;
   }
 }
 /* End Media querys*//*# sourceMappingURL=style.css.map */
