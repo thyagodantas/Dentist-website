@@ -31,14 +31,13 @@ header {
 }
 header .logo img {
   float: left;
-  width: 160px;
-  height: 80px;
+  width: 150px;
 }
 header nav.menu-desktop {
   float: right;
 }
 header nav.menu-desktop ul {
-  padding: 35px 0;
+  padding: 25px 0;
   list-style-type: none;
 }
 header nav.menu-desktop ul li {
@@ -59,7 +58,7 @@ header nav.menu-mobile {
   cursor: pointer;
   background-image: url(../images/menu-mobile.png);
   background-size: 100% 100%;
-  margin-top: 28px;
+  margin-top: 20px;
 }
 header nav.menu-mobile ul {
   display: none;
