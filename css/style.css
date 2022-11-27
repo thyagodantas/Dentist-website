@@ -263,7 +263,59 @@ section.depositions .name-depositions span {
 }
 
 /* End depositions section*/
+/* Start social section */
+.instagram-call {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+  background-color: #98a5ae;
+}
+.instagram-call p {
+  line-height: 20px;
+  color: white;
+  padding: 10px 0;
+  font-size: 13px;
+}
+
+.social-mosaic {
+  float: left;
+  width: 100%;
+}
+
+.img-mosaic-single-social {
+  float: left;
+  width: 11.1111111111%;
+  padding-top: 11.1111111111%;
+  background-color: blue;
+  border: 6px solid white;
+}
+
+.facebook-call {
+  float: left;
+  width: 100%;
+  text-align: center;
+  padding: 40px 0;
+  background-color: #576975;
+}
+.facebook-call p {
+  line-height: 20px;
+  color: white;
+  padding: 10px 0;
+  font-size: 13px;
+}
+
+/* End social section*/
 /* Media querys */
+@media screen and (max-width: 1024px) {
+  .img-mosaic-single-social {
+    width: 16.6666666667%;
+    padding-top: 16.6666666667%;
+  }
+  .social-mosaic div:nth-of-type(1n + 7) {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   header nav.menu-desktop {
     display: none;
@@ -331,6 +383,13 @@ section.depositions .name-depositions span {
     padding-top: 60%;
     position: relative;
     border: 5px solid white;
+  }
+  .img-mosaic-single-social {
+    width: 33.3333333333%;
+    padding-top: 33.3333333333%;
+  }
+  .social-mosaic div:nth-of-type(1n + 4) {
+    display: none;
   }
 }
 @media screen and (max-width: 580px) {
