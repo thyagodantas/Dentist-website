@@ -183,11 +183,86 @@ section.videos {
 section.videos .box-video {
   float: left;
   width: 33.3%;
-  background-color: green;
   padding-top: 19.98%;
+  position: relative;
+  border: 5px solid white;
+}
+section.videos iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* End video section */
+/* Start treatment section*/
+section.treatment {
+  padding: 70px 0;
+}
+section.treatment h2 {
+  color: #698273;
+  text-align: center;
+  font-size: 18px;
+}
+section.treatment .container {
+  padding: 70px 0;
+}
+section.treatment .treatment-container {
+  float: left;
+  width: 33.3%;
+}
+section.treatment .treatment-single {
+  padding: 20px;
+}
+section.treatment .treatment-single h2 {
+  font-size: 18px;
+  color: #737373;
+}
+section.treatment .treatment-single p {
+  padding: 10px 0;
+  font-size: 13px;
+  color: #b4b4b4;
+}
+
+/* End treatment section */
+/* Start depositions section */
+section.depositions h2 {
+  color: #698293;
+  text-align: center;
+  font-size: 18px;
+}
+section.depositions .container {
+  padding: 40px 0;
+  max-width: 400px;
+}
+section.depositions .depositions-single {
+  text-align: center;
+  width: 100%;
+  padding: 0 2%;
+}
+section.depositions .depositions-single quote {
+  font-size: 15px;
+  color: #4b4b4b;
+}
+section.depositions .name-depositions {
+  padding: 19px 0;
+}
+section.depositions .name-depositions img {
+  border-radius: 16px;
+  width: 32px;
+  height: 32px;
+}
+section.depositions .name-depositions span {
+  position: relative;
+  top: 8px;
+  font-size: 13px;
+  color: #b4b4b4;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* End depositions section*/
 /* Media querys */
 @media screen and (max-width: 768px) {
   header nav.menu-desktop {
@@ -245,6 +320,18 @@ section.videos .box-video {
     font-size: 14px;
     margin-top: 8px;
   }
+  section.videos {
+    padding: 50px 0;
+    text-align: center;
+  }
+  section.videos .box-video {
+    float: none;
+    display: inline-block;
+    width: 95%;
+    padding-top: 60%;
+    position: relative;
+    border: 5px solid white;
+  }
 }
 @media screen and (max-width: 580px) {
   section.perfil-container .img-perfil {
@@ -252,6 +339,10 @@ section.videos .box-video {
     height: auto;
     padding-top: 110%;
     display: inline-block;
+  }
+  section.videos .box-video {
+    width: 100%;
+    padding-top: 60%;
   }
 }
 @media screen and (max-width: 480px) {

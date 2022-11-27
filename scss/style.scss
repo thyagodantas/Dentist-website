@@ -202,19 +202,107 @@ section.perfil-container {
 /* End perfil section*/
 
 /* Start video section*/
-
 section.videos {
   padding: 50px 0;
 
   & .box-video {
     float: left;
     width: 33.3%;
-    background-color: green;
     padding-top: calc(33.3% * 0.6);
+    position: relative;
+    border: 5px solid white;
+  }
+
+  & iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
   }
 }
-
 /* End video section */
+
+/* Start treatment section*/
+section.treatment {
+  padding: 70px 0;
+
+  & h2 {
+    color: #698273;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  & .container {
+    padding: 70px 0;
+  }
+
+  & .treatment-container {
+    float: left;
+    width: 33.3%;
+  }
+
+  & .treatment-single {
+    padding: 20px;
+
+    & h2 {
+      font-size: 18px;
+      color: #737373;
+    }
+
+    & p {
+      padding: 10px 0;
+      font-size: 13px;
+      color: #b4b4b4;
+    }
+  }
+}
+/* End treatment section */
+
+/* Start depositions section */
+section.depositions {
+  & h2 {
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  & .container {
+    padding: 40px 0;
+    max-width: 400px;
+  }
+
+  & .depositions-single {
+    text-align: center;
+    width: 100%;
+    padding: 0 2%;
+
+    & quote {
+      font-size: 15px;
+      color: #4b4b4b;
+    }
+  }
+
+  & .name-depositions {
+    padding: 19px 0;
+
+    & img {
+      border-radius: 16px;
+      width: 32px;
+      height: 32px;
+    }
+
+    & span {
+      position: relative;
+      top: 8px;
+      font-size: 13px;
+      color: #b4b4b4;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}
+/* End depositions section*/
 
 /* Media querys */
 @media screen and (max-width: 768px) {
@@ -290,6 +378,20 @@ section.videos {
       }
     }
   }
+
+  section.videos {
+    padding: 50px 0;
+    text-align: center;
+
+    & .box-video {
+      float: none;
+      display: inline-block;
+      width: 95%;
+      padding-top: calc(100% * 0.6);
+      position: relative;
+      border: 5px solid white;
+    }
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -299,6 +401,13 @@ section.videos {
       height: auto;
       padding-top: 110%;
       display: inline-block;
+    }
+  }
+
+  section.videos {
+    & .box-video {
+      width: 100%;
+      padding-top: calc(100% * 0.6);
     }
   }
 }
